@@ -162,6 +162,21 @@ p {
     text-align: center;
 }
 
+.ingredients-menu {
+    font-size: 600;
+    color: #383838;
+    text-align: center;
+}
+
+.ingredients-menu a {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.ingredients-menu .active {
+    text-decoration: underline;
+    text-decoration-color: #C89446;
+}
 @media screen and (min-width: 600px) {
     html {
         font-size: 16px;
