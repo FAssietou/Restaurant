@@ -162,10 +162,17 @@ p {
     text-align: center;
 }
 
+.block-centered .block-body {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .ingredients-menu {
-    font-size: 600;
+    font-weight: 600;
     color: #383838;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .ingredients-menu a {
@@ -174,9 +181,9 @@ p {
 }
 
 .ingredients-menu .active {
-    text-decoration: underline;
     text-decoration-color: #C89446;
 }
+
 @media screen and (min-width: 600px) {
     html {
         font-size: 16px;
