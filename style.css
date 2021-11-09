@@ -169,6 +169,7 @@ p {
 }
 
 .ingredients-menu {
+    margin: 40px 0;
     font-weight: 600;
     color: #383838;
     text-align: center;
@@ -177,11 +178,37 @@ p {
 
 .ingredients-menu a {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
+    position: relative;
 }
 
-.ingredients-menu .active {
-    text-decoration-color: #C89446;
+.ingredients-menu a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    opacity: 0;
+    background: #C89446;
+    transition: .3s;
+}
+
+.ingredients-menu .onclick::after, 
+.ingredients-menu a:hover::after {
+   bottom: 0;
+   opacity: 1;
+}
+
+.menu-summary {
+
+}
+
+.menu-summary-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #383838;
 }
 
 @media screen and (min-width: 600px) {
@@ -232,6 +259,9 @@ p {
 @media only screen and (min-width: 960px) {
     .block {
         margin-bottom: 100px;
+    }
+    .block-last {
+        margin-bottom: 60px;
     }
     .block-left, .block-right {
         display: flex;
@@ -286,5 +316,11 @@ p {
     background: 
         fixed top 95px right 0px url(img/oranges.jpg) no-repeat,     
         fixed top 640px left 0px url(img/spices.jpg) no-repeat;           
-    }    
+    }
+    .ingredients-menu a {
+        margin: 0 32px;
+    }
+    .menu-summary {
+        padding: 85px 0;
+    }        
 }
