@@ -201,14 +201,36 @@ p {
    opacity: 1;
 }
 
-.menu-summary {
+.menu-summary-item {
+    position: relative;
+    padding-left: 120px;
+    margin-bottom: 30px;
+}
 
+.menu-summary-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
 }
 
 .menu-summary-title {
     font-size: 1.125rem;
     font-weight: bold;
     color: #383838;
+    margin-bottom: 0.75rem;
+}
+
+.menu-summary p {
+    margin-top: 0;
+    font-size: 0.75rem;
+}
+
+.menu-summary-price {
+    font-family: 'Pinyon Script', serif;
+    color: #C89446;
+    font-size: 2.5rem;
+    line-height: 1;
 }
 
 @media screen and (min-width: 600px) {
